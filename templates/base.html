@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<script src="/static/js/style.js" defer></script>
+<link rel="icon" type="image/png" sizes="32x32" href="/static/img/log.png">
+<html lang="en">
+<link href=
+"https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+          rel="stylesheet" />
+<head>
+    <meta charset="UTF-8">
+    <title>Thetl</title>
+</head>
+<body>
+<section class="et-hero-tabs">
+    <h1>THETL Portfolio</h1>
+    <h3>Khmel Pavel</h3>
+    <p>Getting to know me will take no more than 3 minutes</p>
+    <div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="#tab-es6">About</a>
+      <a class="et-hero-tab" href="#tab-flexbox">Projects</a>
+      <a class="et-hero-tab" href="#tab-other">Other</a>
+      <span class="et-hero-tab-slider"></span>
+    </div>
+  </section>
+<button class="scroll-top">
+  <i class="bi bi-caret-up" style="font-size: 1.5em;"></i>  <!-- Иконка вверх (используйте вашу) -->
+</button>
+  <!-- Main -->
+  <main class="et-main">
+    <section class="et-slide" id="tab-es6">
+        <div class="wrapper1">
+      <h1>About me</h1>
+        </div>
+        <div class="wrapper2">
+      <h3>General information</h3>
+        </div>
+        <div class="wrapper3">
+        <p>It can take a long time to list personal characteristics, but of the important things about myself, I can only say one thing, you will not regret it.</p>
+        <p>I started studying programming in depth in 2022. Mastered many libraries, various GUI tools, HTML, CSS, DB, machine learning, AI. I also had to work with someone else's code, but this is a plus, because it is important to understand what the other person is thinking. And of course, the word mastered is inappropriate here, because it is impossible to know everything. But I have a desire to study, to learn new programming languages, so that someday I can say "I have mastered".</p>
+         <p>Compared to other developers, I may seem inexperienced, but my desire to learn and develop in these areas, to improve the world, covers a modest period of study.</p>
+
+        </div>
+    </section>
+    <section class="et-slide" id="tab-flexbox">
+        <div class="wrapper1">
+      <h1>Projects</h1>
+        </div>
+        <div class="wrapper2">
+      <h3>Py App</h3>
+        </div>
+        <div class="wrapper3">
+        <p>Most of my programs are written in Flask | Django | Postgresql | Qt, recently I got hooked on Ai TensorFlow | NumPy | Keras. My projects in brief:</p>
+        <p>My projects in brief:</p>
+         <p>Application for quick PC test (Qt-Win) | Simplified YouTube - RusY (Flask-PostgreSQL) | Blog site for sharing ideas (Flask-PostgreSQL) | Online Store (Django-PostgreSQL) | Chatbot (Flask-random) | Text Generator Model (TensorFlow) | A model that distinguishes images (TensorFlow).</p>
+        <p>We can say that these are the main projects in my portfolio.</p>
+            <p>I didn't create too many sites of the same type in order not to stop there and develop further.</p>
+
+            <p>With a lot of ideas, you can achieve a lot. That's what I'm aiming for.</p>
+            <p>All projects are linked <a style="color: rebeccapurple" href="https://github.com/houston03">GitHub</a></p>
+        </div>
+    </section>
+    <section class="et-slide" id="tab-other">
+        <div class="wrapper1">
+      <h1>Other</h1>
+        </div>
+        <div class="wrapper2">
+      <h3>Contacts and personal information</h3>
+            <p>A more detailed portfolio site
+                <div class="social-icons"><a href="https://portfolio-vert-delta-96.vercel.app/">https://portfolio-vert-delta-96.vercel.app/</a>
+        </div></p>
+        </div>
+        <div class="wrapper3">
+        <p>You can contact me:</p>
+            <div class="social-icons">
+            <a class="social-icon-vk" href="https://vk.com/id201359102">VK</a><br>
+            </div>
+            <div class="social-icons">
+             <a class="social-icon-telegram" href="https://web.telegram.org/a/#6783971562">Tg</a><br>
+            </div>
+                <div class="social-icons">
+  <a class="social-icon-email" href="https://mail.yandex.ru/?uid=196769690#inbox">Email</a><br>
+</div>
+            <div class="social-icons">
+             <a class="social-icon-twitter" href="/#">Discord</a><br>
+            </div>
+        </div>
+    </section>
+  </main>
+
+   {% block content %}{% endblock %}
+</body>
+</html>
